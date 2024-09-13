@@ -9,7 +9,7 @@ llm "Find all files containing the word meditation"
 ```
 and it answers with:
 ```sh
-find . -type f -exec grep 'meditation' {} \;
+grep -r 'meditation'
 ```
 You can then (optionally inspect 🤠) copy and paste to run the command.
 
