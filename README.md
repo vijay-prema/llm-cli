@@ -17,7 +17,7 @@ You can then (optionally inspect 🤠) copy and paste to run the command.
 These instructions are for Ubuntu but it can be adapted to work on any machine.
 1. Install `wget`, `curl` and `jq` if you dont already have them
 ``` sh
-sudo apt install curl jq
+sudo apt install wget curl jq
 ```
 2. Install ollama
 ```sh
