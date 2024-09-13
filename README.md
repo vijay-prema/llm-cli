@@ -25,7 +25,7 @@ curl -fsSL https://ollama.com/install.sh | sh
 ```
 3. Download my `llm` script from this repo and make sure its accessible on your PATH, and that it is exectuable
 ```sh
-curl -fsSL https://raw.githubusercontent.com/vijay-prema/llm-cli/main/llm
+wget https://raw.githubusercontent.com/vijay-prema/llm-cli/main/llm
 chmod +x llm
 ```
 
@@ -44,4 +44,4 @@ llm "Find all files containing the word meditation"
 ```
 It always gives you the raw command with no explanation.
 
-If you PC is slow, it could take a while. Try a smaller/faster ollama model if needed.
+If you PC is slow, it could take a while. Try a smaller/faster ollama model if needed.  If you have a GPU, try a model that can work on your GPU.
