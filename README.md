@@ -15,7 +15,7 @@ You can then (optionally inspect 🤠) copy and paste to run the command.
 
 ## Install
 These instructions are for Ubuntu but it can be adapted to work on any machine.
-1. Install curl and jq if you dont already have them
+1. Install `wget`, `curl` and `jq` if you dont already have them
 ``` sh
 sudo apt install curl jq
 ```
