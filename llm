@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ "$1" != "" ]; then
+    curl -sS http://localhost:11434/api/generate -d '{
+       "model": "gemma2","stream": false,
+       "prompt":"'"$1"' (command only, no explanation)"
+     }' | jq -r '.response'
+else
+    echo "You need to enter a question in quotes"
+fi
