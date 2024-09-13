@@ -37,6 +37,7 @@ ollama run gemma2
 ```
 *The first time it will take a while to start as it is downloading the several GB model.
 Read about [ollama here](https://github.com/ollama/ollama). It is possible to use different models other than gemma2, based on the spec of your PC.*
+On Linux, you can close ollama cli by typing `/bye` and my script will still work, because it continues to run as a background service.  You can see the service by typing `sudo systemctl status ollama.service`.
 
 Now you can use the script to generate a terminal command from natural language:
 ```sh
