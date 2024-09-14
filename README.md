@@ -3,11 +3,11 @@ I want to interact with my terminal using natural language instead of obscure co
 
 This is a dead simple shell script providing an in-terminal "natural language to terminal command interface" using an LLM that runs locally (using ollama).
 
-Once installed, you type in your terminal like so:
+Once installed, you type what you want to do in your terminal, like so:
 ```sh
 llm "Find all files containing the word meditation"
 ```
-and it answers with:
+and it answers with the actual command that will do it:
 ```sh
 grep -r 'meditation'
 ```
