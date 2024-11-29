@@ -2,7 +2,7 @@
 
 if [ "$1" != "" ]; then
     curl -sS http://localhost:11434/api/generate -d '{
-       "model": "gemma2","stream": false,
+       "model": "qwen2.5-coder","stream": false,
        "prompt":"'"$1"' (command only, no explanation)"
      }' | jq -r '.response'
 else
