@@ -33,10 +33,10 @@ chmod +x llm
 ### Run ollama server
 **You need the ollama server always running the background for the script to work:**
 ```sh
-ollama run gemma2
+ollama run qwen2.5-coder
 ```
 *The first time it will take a while to start as it is downloading the several GB model.
-Read about [ollama here](https://github.com/ollama/ollama). It is possible to use different models other than gemma2, based on the spec of your PC.*
+Read about [ollama here](https://github.com/ollama/ollama). It is possible to use different models other than qwen2.5-coder, based on the spec of your PC.*
 
 On Linux, you can close ollama cli by typing `/bye` and my script will still run, because ollama continues to run as a background service.  You can see the background service by typing `sudo systemctl status ollama.service`.
 
