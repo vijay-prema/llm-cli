@@ -13,6 +13,15 @@ grep -r 'meditation'
 ```
 You can then (optionally inspect 🤠) copy and paste to run the command.
 
+A more advanced example that my setup consistently gets correct:
+```sh
+llm "generate a qr code based on clipboard contents and save to output.png, then open it in the default ubuntu app"
+```
+Answer:
+```
+qrencode -o /tmp/output.png $(xclip -o) && xdg-open /tmp/output.png
+```
+
 ## Install
 These instructions are for Ubuntu but it can be adapted to work on any machine.
 1. Install `wget`, `curl` and `jq` if you dont already have them
